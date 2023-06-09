@@ -208,8 +208,6 @@ EMAIL_USE_SSL = True
 # DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 # DEFAULT_FROM_EMAIL = str(os.getenv("DEFAULT_FROM_EMAIL"))
 
-# EMAIL_HOST_USER = 'g1.f4g'
-# EMAIL_HOST_PASSWORD = 'rfif7vfif'
 
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER + '@yandex.ru'  # если ya - + '@yandex.ru'
 
@@ -220,7 +218,6 @@ EMAIL_ADMIN = os.getenv("EMAIL_ADMIN")
 
 # e-mail format !!!
 # RECIPIENT_LIST = [(mail.split('|')[0], mail.split('|')[1]) for mail in os.getenv("RECIPIENT_LIST").split(',')]
-# RECIPIENT_LIST = [('mm', 'gm_m@mail.ru')]
 
 ADMINS = [(em.split('|')[0], em.split('|')[1]) for em in os.getenv("ADMINS").split(',')]
 
